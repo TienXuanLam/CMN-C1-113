@@ -1,0 +1,23 @@
+max_retry: 1
+memory_enabled: false
+timeout_s: 120
+
+# STT configuration
+stt_provider: whisper
+stt_model: base
+audio_transcribe_scratch_dir: /tmp/cmn-c1-113/transcribe
+audio_max_file_size_mb: 20
+audio_allowed_extensions: [wav, mp3, ogg, flac, m4a]
+audio_output_ttl_seconds: 900
+
+# Retriever configuration
+retriever_top_k: 5
+retriever_score_threshold: 0.45
+qdrant_collection: faq_kb
+
+# LLM configuration
+llm_model: gpt-4o-mini
+
+# TTS configuration (VoxCPM2 local OSS)
+tts_provider: voxcpm2
+tts_chunk_max_chars: 200

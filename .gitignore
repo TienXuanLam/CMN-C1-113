@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Env
+.env
+*.env.local
+
+# CoE-distributed reference files — do not commit to template repos
+CLAUDE.md
+STG_RUNBOOK.md
+DEV_CREDENTIAL_PROVISIONING.md
+security_rules/
+ci_stubs/
+MANIFEST.md
+
+# Local verification artifacts (check-local.sh Stage 5 rehearsal / reuse
+# telemetry) — regenerated on every run, never part of the published tree.
+stage5_evidence/
+reuse_telemetry/
+/tmp/stg-server.log
+
